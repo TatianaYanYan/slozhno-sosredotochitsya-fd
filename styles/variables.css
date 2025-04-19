@@ -11,32 +11,20 @@
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
   --main-heading-color: #000028;
-  --section-title-color: #ff0070;
   --header-title: #db00ff;
-  --title: #ff0070;
-  --header-menu-color-focus: #ff0070;
   --main-gap: 10px;
   --gap: 20px;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
   --font-weight-title: 700;
   --font-weight: 400;
-  --text-shadow: #ff0070;
-  --link-effect-color: #ff0070;
-  --header-logo-line-height: 83%;
-  --header-logo-size: 116px;
+  --title-line-height: 83%;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 @media (width>=768px) {
   :root {
-    .header__title {
-      --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    }
-  }
-}
-@media (width>=1024px) {
-  :root {
-    .header__title {
-      --header-logo-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    .title {
+      --title-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
   }
 }

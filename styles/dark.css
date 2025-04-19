@@ -3,7 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -15,60 +14,21 @@
   --background-image: url(../images/cover-image-dark.png);
   --text-color: #f1b2ce;
   --nav-color: #ff0070;
-  --nav-hover-color: rgb(255 0 112 / 0.4);
+  --nav-hover-color: rgba(255, 0, 112, 0.4);
   --main-heading-color: #000028;
-  --section-title-color: #ff0070;
   --header-title: #db00ff;
-  --title: #ff0070;
-  --header-menu-color-focus: #ff0070;
   --main-gap: 10px;
   --gap: 20px;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
   --font-weight-title: 700;
   --font-weight: 400;
-  --text-shadow: #ff0070;
-  --link-effect-color: #ff0070;
-  --header-logo-line-height: 83%;
-  --header-logo-size: 116px;
+  --title-line-height: 83%;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 .theme-dark .header__rec {
   display: flex;
-  gap: var(--main-gap);
-  flex-wrap: wrap;
-  align-content: center;
-  align-self: center;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-font-family: "IBM Plex mono", monospace;
-    --accent-color: #ff0070;
-    --main-bg-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
-    --text-color: #f1b2ce;
-    --nav-color: #ff0070;
-    --nav-hover-color: rgb(255 0 112 / 0.4);
-    --main-heading-color: #000028;
-    --section-title-color: #ff0070;
-    --header-title: #db00ff;
-    --title: #ff0070;
-    --header-menu-color-focus: #ff0070;
-    --main-gap: 10px;
-    --gap: 20px;
-    --main-text-size: 18px;
-    --main-line-height: 23.4px;
-    --font-weight-title: 700;
-    --font-weight: 400;
-    --text-shadow: #ff0070;
-    --link-effect-color: #ff0070;
-    --header-logo-line-height: 83%;
-    --header-logo-size: 116px;
-  }
-  .header__rec {
-    display: flex;
-    gap: 2px;
-    flex-wrap: wrap;
-    align-content: center;
-    align-self: center;
-  }
+.theme-auto .header__rec {
+  display: flex;
 }

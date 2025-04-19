@@ -3,7 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -15,24 +14,19 @@
   --background-image: url(../images/cover-image-light.png);
   --text-color: #353430;
   --nav-color: #353430;
-  --nav-hover-color: rgb(255 0 112 / 0.4);
-  --main-heading-color: #000028;
-  --section-title-color: #353430;
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
+  --main-heading-color: #353430;
   --header-title: #ffc2e6;
-  --title: #353430;
-  --header-menu-color-focus: #353430;
   --main-gap: 10px;
   --gap: 20px;
   --main-text-size: 18px;
   --main-line-height: 23.4px;
   --font-weight-title: 700;
   --font-weight: 400;
-  --text-shadow: #ff8dcb;
-  --link-effect-color: #ff8dcb;
-  --header-logo-line-height: 83%;
-  --header-logo-size: 116px;
+  --title-line-height: 83%;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
-.header__rec {
+.theme-light .header__rec {
   display: none;
 }
 @media (prefers-color-scheme: light) {
@@ -43,21 +37,22 @@
     --background-image: url(../images/cover-image-light.png);
     --text-color: #353430;
     --nav-color: #353430;
-    --nav-hover-color: rgb(255 0 112 / 0.4);
-    --main-heading-color: #000028;
-    --section-title-color: #353430;
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
+    --main-heading-color: ##353430;
     --header-title: #ffc2e6;
-    --title: #353430;
-    --header-menu-color-focus: #353430;
     --main-gap: 10px;
     --gap: 20px;
     --main-text-size: 18px;
     --main-line-height: 23.4px;
     --font-weight-title: 700;
     --font-weight: 400;
-    --text-shadow: #ff8dcb;
-    --link-effect-color: #ff8dcb;
-    --header-logo-line-height: 83%;
-    --header-logo-size: 116px;
+    --title-line-height: 83%;
+    --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+  .theme-light .header__rec {
+    display: none;
+  }
+  .theme-auto .header__rec {
+    display: none;
   }
 }
